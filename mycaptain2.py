@@ -1,0 +1,23 @@
+num1 =int(input("enter the no. of element:"))
+bbb = list()
+for i in range(num1):
+    tk = input()
+    bbb.append(tk)
+print(bbb)
+tp =(tuple(bbb))
+print(tp)
+ps= tp.__len__()
+print(str(ps)+" is length of tuple")
+num3=int(input("enter the index of tuple"))
+print(tp[num3])
+print("the list is now dictionary")
+print("enter key for dictionary")
+ggg =list()
+for h in range(int(ps)):
+    el =input()
+    ggg.append(el)
+dc =dict(zip(bbb,ggg))
+print(dc)
+num3=str(input("enter  element to which is deleted"))
+del dc[num3]
+print(dc)
